@@ -23,13 +23,13 @@ export class FormPersonalDetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title="WhatsUp Doc" />
+                    <AppBar title="Enter Personal Details" />
 
                     <TextField
                         hintText=" Enter your Date of Birth"
                         floatingLabelText="Date of Birth"
-                        onChange={handleChange('firstName')}
-                        defaultValue={values.firstName}
+                        onChange={handleChange('dateOfBirth')}
+                        defaultValue={values.dateOfBirth}
                     />
                     <br />
                     <TextField
@@ -44,6 +44,13 @@ export class FormPersonalDetails extends Component {
                         floatingLabelText="City of Residence"
                         onChange={handleChange('city')}
                         defaultValue={values.city}
+                    />
+                    <br />
+                    <TextField
+                        hintText="Enter your Occupation"
+                        floatingLabelText="Occupation"
+                        onChange={handleChange('occupation')}
+                        defaultValue={values.occupation}
                     />
                     <br />
                     <RaisedButton

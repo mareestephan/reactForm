@@ -18,7 +18,7 @@ export class FormUserDetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <AppBar title="WhatsUp Doc" />
+                    <AppBar title="Enter User Details" />
 
                     <TextField
                         hintText=" Enter your First Name"
